@@ -46,3 +46,19 @@ type = "request"
 [debugger.interactive.launchMessage.arguments]
 classPaths = ["."]
 mainClass = "Main"
+
+[workflows]
+runButton = "Run WatchFace"
+
+[[workflows.workflow]]
+name = "Run WatchFace"
+author = 38813395
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "javac --module-path javafx-sdk-18.0.2/lib --add-modules javafx.controls WatchFace.java"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "java --module-path javafx-sdk-18.0.2/lib --add-modules javafx.controls WatchFace"
