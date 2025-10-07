@@ -24,7 +24,7 @@ public class WatchFace extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(AnalogWatch::new);
+        SwingUtilities.invokeLater(WatchFace::new);
     }
 }
 

@@ -62,3 +62,6 @@ args = "javac --module-path javafx-sdk-18.0.2/lib --add-modules javafx.controls 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "java --module-path javafx-sdk-18.0.2/lib --add-modules javafx.controls WatchFace"
+
+[agent]
+expertMode = true

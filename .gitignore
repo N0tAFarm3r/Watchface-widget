@@ -1,0 +1,10 @@
+/out/
+/bin/
+/*.class
+*.jar
+*.log
+*.iml
+.idea/
+.vscode/
+*.exe
+*.dll
